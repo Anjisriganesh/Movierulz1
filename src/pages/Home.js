@@ -29,7 +29,7 @@ export default function Home() {
 
   // Load movies from backend
   useEffect(() => {
-    axios.get("http://localhost:8600/api/movies")
+    axios.get("https://movierulz1-mjpd.onrender.com/api/movies")
       .then(res => setMovies(res.data))
       .catch(err => console.log(err));
   }, []);
